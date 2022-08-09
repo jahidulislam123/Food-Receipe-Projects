@@ -23,7 +23,7 @@ const Navbar = () => {
       <li><Link  to="/home">Home</Link></li>
       <li><Link  to="/addProduct">Add Product </Link></li>
       <li><Link  to="/">Delete Product </Link></li>
-      <li><Link  to="/">Edit Product </Link></li> 
+      <li><Link  to="/">Update Product </Link></li> 
     </ul>
   </div>
   <div class="navbar-end">

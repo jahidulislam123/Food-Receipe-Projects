@@ -1,0 +1,101 @@
+[
+    {
+        "_id": 1,
+        "name": "Rolls-Royce",
+        "price": "$3456",
+        "description": "Automaker Henry Royce built his first motor car in 1904 and in May of that year met Charles Rolls, whose company sold quality cars in London. An agreement was reached that Royce Limited would manufacture a range of cars to be exclusively sold by CS Rolls & Co – the pair also agreed that the cars would have the name Rolls-Royce.",
+        "quantity": "5",
+        "supliar": "Henry Roycek",
+        "img": "https://i.ibb.co/wBkC7xs/Rolls-royals.jpg"
+    },
+    {
+        "_id": 2,
+        "name": "Honda",
+        "price": "$2456",
+        "description": "this is a car BMW stands for Bayerische Motoren Werke GmnH, which roughly translates to Bavarian Engine Works Company. The name harks back to the company's origin in the German state of Bavaria. It also indicates BMW's original product range of engines for various its run without oil ",
+        "quantity": "58",
+        "supliar": "Soichiro Honda",
+        "img": "https://i.ibb.co/FwVwJMw/Honda.jpg "
+    },
+    {
+        "_id": 3,
+        "name": "BMW",
+        "price": "$4156",
+        "description": "The acronym BMW stands for Bayerische Motoren Werke GmnH, which roughly translates to Bavarian Engine Works Company. The name harks back to the company's origin in the German state of Bavaria. It also indicates BMW's original product range of engines for various applications.",
+        "quantity": "34",
+        "supliar": "Bayerische Motoren Werke GmnH",
+        "img": "https://i.ibb.co/2MJC4Nt/Bmw.jpg"
+    },
+    {
+        "_id": 4,
+        "name": "Ferrari",
+        "price": "$2945",
+        "description": "The luxury car brand Ferrari is named after its Italian founder, Enzo Ferrari, who was an official Alto race driver. In 1939, he quit racing to build his own company. Within one year, he built 1500 cm3 8-Cylinder 815 Spider, winning its first Grand Prix in 1947. In Italian, the word Ferrari is derived from the word ferraro, meaning blacksmith.",
+        "quantity": "11",
+        "supliar": "Enzo Ferrari",
+        "img": "https://i.ibb.co/JrxjsZW/Ferrari.jpg "
+    },
+    {
+        "_id": 5,
+        "name": "Cadillac",
+        "price": "$1456",
+        "description": "Cadillac was named after the great French explorer Antoine Laumet de La Mothe, Sieur de Cadillac, who founded Detroit, Michigan in 1701.",
+        "quantity": "33",
+        "supliar": "Antoine Laumet de La Mothe",
+        "img": "https://i.ibb.co/1qGhg3r/Cadillac.jpg "
+    },
+    {
+        "_id": 6,
+        "name": "Audi",
+        "price": "$3776",
+        "description": "German Engineer August Horch founded the company August Horch & Cie. Motorwagenwerke AG, in 1899. Due to misunderstandings among partners, Horch left the company and formed a new company, August Horch Automobilwerke GmbH in 1909. ",
+        "quantity": "15",
+        "supliar": "August Horch",
+        "img": "https://i.ibb.co/Dg1qG79/Audi.jpg "
+    },
+    {
+        "_id": 7,
+        "name": "Aston Martin",
+        "price": "$8256",
+        "description": "The name Aston Martin is derived partly from the name of its founder, Lionel Martin, and partly for a stretch of road in Hertfordshire, England, used for racing, called the Aston Hillclimb. ",
+        "quantity": "19",
+        "supliar": " Lionel Martin",
+        "img": "https://i.ibb.co/B4hfJTz/auston-Martin.jpg "
+    },
+    {
+        "_id": 8,
+        "name": "Datsun",
+        "price": "$9256",
+        "description": "The company began in 1911 as Kwaishinsha Jidosha Kojo, founded by M. Hashimoto. His dream was to produce cars uniquely suited to Japan. In 1914, he completed work on a small 2-cylinder 10-horsepower car, which he named  DAT, after the initial letters of the surnames of his three investors — K. Den, R. Aoyama, and M. Takeuchi.",
+        "quantity": "42",
+        "supliar": "M. Hashimoto",
+        "img": "https://i.ibb.co/y62DCwS/datsun.jpg "
+    },
+    {
+        "_id": 9,
+        "name": "Volkswagen",
+        "price": "$9256",
+        "description": "On May 28, 1937, the government of Germany, which was then under the control of Adolf Hitler, formed a state-owned automobile company, which was originally called Gesellschaft zur Vorbereitung des Deutschen Volkswagens mbH (Company for the Manufacture of the German Peoples Car).",
+        "quantity": "9",
+        "supliar": "Adolf Hitler",
+        "img": "https://i.ibb.co/NK7NRbQ/Volkswagen.jpg"
+    },
+    {
+        "_id": 10,
+        "name": "Ford",
+        "price": "$9056",
+        "description": "Henry Ford founded the Ford Motors Company in 1903, in Detroit, Michigan.Ford has left his first company Cadillac, and started his own car company with a $28,000 investment.",
+        "quantity": "16",
+        "supliar": "Henry Ford ",
+        "img": "https://i.ibb.co/nsxnmN7/Ford.jpg"
+    },
+    {
+        "_id": 11,
+        "name": "Nissan",
+        "price": "$3226",
+        "description": "In 1928, Yoshisuke Aikawa founded the holding company Nihon Sangyo, or Nihon Industries. The name 'Nissan' was an abbreviation used in the 1930s on the Tokyo Stock Exchange for Nihon Sangyo. The company included Tobata Casting and Hitachi",
+        "quantity": "67",
+        "supliar": "Yoshisuke Aikawa ",
+        "img": "https://i.ibb.co/5sppGx7/Nissan.jpg"
+    }
+]
