@@ -32,7 +32,7 @@ const AddItem = () => {
       <input className='input mb-4 input-bordered input-primary w-full max-w-xs' placeholder='Quantity' type="text" {...register("quantity")} />
       <input className='input mb-4 input-bordered input-primary w-full max-w-xs' placeholder='Supplier' type="text" {...register("supliar")} />
       <input className='input mb-4 input-bordered input-primary w-full max-w-xs' placeholder='photoUrl' type="text" {...register("img")} />
-      <input className='btn mb-4 text-white btn-secondary' value="Add Food" type="submit" />
+      <input className='btn mb-4  text-white btn-secondary' value="Add Food" type="submit" />
     </form>
         </div>
         </div>

@@ -5,13 +5,43 @@ import { useParams } from 'react-router-dom';
 
 const FoodDetails = () => {
     const {foodDetailsId} =useParams();
-    const [foodi ,setFoodi]=useState({})
+    const [foodi ,setFoodi]=useState({});
+    const [isReload,setReload] = useState(false);
     useEffect(()=>{
         const url =`http://localhost:5000/food/${foodDetailsId}`
         fetch(url)
         .then(res=>res.json())
         .then(data=>setFoodi(data))
     },[])
+
+
+    const deliverHandle =(e)=>{
+        // console.log(e);
+        const quantity =foodi?.quantity;
+        // console.log(quantity);
+        const updateDeliver ={quantity};
+        const url2 =`http://localhost:5000/food/${foodDetailsId}`;
+        console.log(url2);
+        fetch(url2,{
+            method:"PUT",
+            headers:{
+                'Content-type':'application/json',
+
+            },
+            body: JSON.stringify(updateDeliver),
+
+        })
+        .then(Response =>Response.json())
+        .then(data=>{
+            // setReload(!isReload)
+            
+            console.log(data);
+            window.location.reload(false);
+            
+            
+        })
+    }
+
     return (
         <div>
            
@@ -19,18 +49,27 @@ const FoodDetails = () => {
   <div class="hero-content flex-col lg:flex-row-reverse">
     <img src={foodi.img} class="max-w-lg rounded-lg shadow-2xl" />
     <div>
-      <h1 class="text-5xl font-bold">{foodi.name}</h1>
+      <h1 class="text-5xl pb-4 font-bold">{foodi.name}</h1>
       <h1 class="text-2xl font-bold">Price : {foodi.price}</h1>
       <h1 class="text-3xl font-bold"> Quantity : {foodi.quantity}</h1>
       
       <p class="py-6">{foodi.description}</p>
 
-      <button class="btn text-white font-bold w-full btn-secondary">Order Now</button>
+      <div>
+        <button onClick={()=>deliverHandle(foodi._id)} class="btn text-white font-bold w-full btn-secondary" type="submit"> Delivered</button> 
+    </div> 
+        
+      
     </div>
-  </div>
+  
 </div>
+</div>
+</div>
+
+
+
             
-        </div>
+        
     );
 };
 

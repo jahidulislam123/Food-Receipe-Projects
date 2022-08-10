@@ -24,13 +24,14 @@ const Navbar = () => {
    </div>
     </div>
   </div>
+  
   <div class="navbar-end hidden lg:flex">
     <ul class="menu menu-horizontal p-0">
         
-      <li><Link  to="/home">Home</Link></li>
+      <li><Link  to="/home ">Home</Link></li>
       <li><Link  to="/addProduct">Add Product </Link></li>
       <li><Link  to="/deleteItem">Delete Product </Link></li>
-      <li><Link  to="/">Update Product </Link></li> 
+      
       <li>{ user ? <button onClick={logout} class="btn text-white btn-secondary">SignOut</button>: <Link to="/login" class="btn btn-primary">Login</Link>}</li>
     </ul>
   </div>
