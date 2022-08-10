@@ -6,7 +6,7 @@ import SingleFood from '../SingleFood/SingleFood';
 const Foods = () => {
     const [food,setFood]=useState([])
     useEffect(()=>{
-        fetch('Food.json')
+        fetch('http://localhost:5000/foods')
         .then(res=>res.json())
         .then(data=>setFood(data))
     },[])

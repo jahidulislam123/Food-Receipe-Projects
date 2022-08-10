@@ -8,16 +8,21 @@ import AddProduct from './components/AddProduct/AddProduct';
 import Login from './components/Login/Login';
 import Register from './components/Register/Register';
 import RequireAuth from './components/RequireAuth/RequireAuth';
+import AddItem from './components/AddItem/AddItem';
+import DeleteItem from './components/DeleteItem/DeleteItem';
+import FoodDetails from './components/FoodDetails/FoodDetails';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App ">
       <Navbar></Navbar>
       
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="home" element={<Home />} />
-        <Route path="addProduct" element={<RequireAuth><AddProduct /></RequireAuth>} />
+        <Route path="addProduct" element={<RequireAuth><AddItem /></RequireAuth>} />
+        <Route path="deleteItem" element={<RequireAuth><DeleteItem /></RequireAuth>} />
+        <Route path='/foodDetails/:foodDetailsId' element={<FoodDetails></FoodDetails>}></Route>
         <Route path="login" element={<Login />} />
         <Route path="signUp" element={<Register />} />
       </Routes>
