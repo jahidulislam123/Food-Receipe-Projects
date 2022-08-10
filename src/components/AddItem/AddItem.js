@@ -10,7 +10,7 @@ const AddItem = () => {
         
 
         console.log(data);
-        const url =`http://localhost:5000/foods`;
+        const url =`https://peaceful-mesa-26468.herokuapp.com/foods`;
         fetch(url,{
             method:'POST',
             headers:{

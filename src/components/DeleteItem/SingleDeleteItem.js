@@ -8,7 +8,7 @@ const SingleDeleteItem = ({delete1}) => {
     const handleDelete2 =id=>{
         const procced=window.confirm('Are you sure you want to delete ?');
         if(procced){
-            const url =`http://localhost:5000/food/${id}`;
+            const url =`https://peaceful-mesa-26468.herokuapp.com/food/${id}`;
             fetch(url,{
                 method : 'DELETE'
             })

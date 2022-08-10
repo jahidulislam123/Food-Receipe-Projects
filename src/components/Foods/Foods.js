@@ -21,7 +21,7 @@ const Foods = () => {
 
 
     useEffect(()=>{
-        fetch('http://localhost:5000/foods')
+        fetch('https://peaceful-mesa-26468.herokuapp.com/foods')
         .then(res=>res.json())
         .then(data=>setFood(data))
     },[])

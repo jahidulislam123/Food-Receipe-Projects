@@ -8,7 +8,7 @@ const FoodDetails = () => {
     const [foodi ,setFoodi]=useState({});
     const [isReload,setReload] = useState(false);
     useEffect(()=>{
-        const url =`http://localhost:5000/food/${foodDetailsId}`
+        const url =`https://peaceful-mesa-26468.herokuapp.com/food/${foodDetailsId}`
         fetch(url)
         .then(res=>res.json())
         .then(data=>setFoodi(data))
@@ -20,7 +20,7 @@ const FoodDetails = () => {
         const quantity =foodi?.quantity;
         // console.log(quantity);
         const updateDeliver ={quantity};
-        const url2 =`http://localhost:5000/food/${foodDetailsId}`;
+        const url2 =`https://peaceful-mesa-26468.herokuapp.com/food/${foodDetailsId}`;
         console.log(url2);
         fetch(url2,{
             method:"PUT",
