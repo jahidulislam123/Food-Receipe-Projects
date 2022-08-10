@@ -7,6 +7,7 @@ import { Routes, Route ,Link} from "react-router-dom";
 import AddProduct from './components/AddProduct/AddProduct';
 import Login from './components/Login/Login';
 import Register from './components/Register/Register';
+import RequireAuth from './components/RequireAuth/RequireAuth';
 
 function App() {
   return (
@@ -16,7 +17,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="home" element={<Home />} />
-        <Route path="addProduct" element={<AddProduct />} />
+        <Route path="addProduct" element={<RequireAuth><AddProduct /></RequireAuth>} />
         <Route path="login" element={<Login />} />
         <Route path="signUp" element={<Register />} />
       </Routes>
