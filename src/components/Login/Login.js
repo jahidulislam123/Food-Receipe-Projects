@@ -4,6 +4,7 @@ import {  useSignInWithGoogle } from 'react-firebase-hooks/auth';
 import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { useForm } from "react-hook-form";
 import { Link, useNavigate } from 'react-router-dom';
+import { toast } from 'react-toastify';
 
 
 
@@ -22,6 +23,7 @@ const Login = () => {
 
     const navigate =useNavigate()
     if(user || gUser){
+      toast("Yes You have logged in")
       navigate("/home")
     }
 

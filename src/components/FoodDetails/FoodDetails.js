@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useState } from 'react';
 import { useParams } from 'react-router-dom';
-
+import { toast } from 'react-toastify';
 
 const FoodDetails = () => {
     const {foodDetailsId} =useParams();
@@ -15,7 +15,7 @@ const FoodDetails = () => {
     },[])
 
 
-    const deliverHandle =(e)=>{
+    const deliverHandle1 =(e)=>{
         // console.log(e);
         const quantity =foodi?.quantity;
         // console.log(quantity);
@@ -37,9 +37,12 @@ const FoodDetails = () => {
             
             console.log(data);
             window.location.reload(false);
+            toast("Updated Quantity")
+           
             
             
         })
+       
     }
 
     return (
@@ -56,7 +59,7 @@ const FoodDetails = () => {
       <p class="py-6">{foodi.description}</p>
 
       <div>
-        <button onClick={()=>deliverHandle(foodi._id)} class="btn text-white font-bold w-full btn-secondary" type="submit"> Delivered</button> 
+        <button onClick={()=>deliverHandle1(foodi._id)} class="btn text-white font-bold w-full btn-secondary" type="submit"> Delivered</button> 
     </div> 
         
       

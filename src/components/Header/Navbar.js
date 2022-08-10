@@ -3,14 +3,17 @@ import React from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { Link } from 'react-router-dom';
 import auth from '../../firebase.init';
-
+import { toast } from 'react-toastify';
 import logo1 from '../../images/logo.png'
 
 const Navbar = () => {
   const [user]=useAuthState(auth);
   const logout = () => {
     signOut(auth);
+    toast("You have sign out")
+    
   };
+ 
     return (
         <div>
             <div class="navbar bg-base-100">

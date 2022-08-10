@@ -1,8 +1,11 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import { toast } from 'react-toastify';
 
 const SingleDeleteItem = ({delete1}) => {
     const [myItems,setMyItem]=useState([]);
-    const handleDelete =id=>{
+    const navigate =useNavigate()
+    const handleDelete2 =id=>{
         const procced=window.confirm('Are you sure you want to delete ?');
         if(procced){
             const url =`http://localhost:5000/food/${id}`;
@@ -14,8 +17,13 @@ const SingleDeleteItem = ({delete1}) => {
                 console.log(data);
                 const remaining =myItems.filter(delete1 =>delete1._id!==id);
                 setMyItem(remaining);
-                window.location.reload(false);
+                toast("successfull deleted and cheack it in home page")
+               navigate('/home')
+                
+
+                
             })
+            // window.location.reload(false);
         }
 
     }
@@ -34,7 +42,7 @@ const SingleDeleteItem = ({delete1}) => {
       <div class="badge badge-outline">Quantity</div> 
       <div class="badge badge-outline">{quantity}</div>
     </div>
-    <button onClick={()=>handleDelete(delete1._id)} class="btn btn-secondary text-white font-bold w-full ">delete</button>
+    <button onClick={()=>handleDelete2(delete1._id)} class="btn btn-secondary text-white font-bold w-full ">delete</button>
   </div>
 </div>
     );

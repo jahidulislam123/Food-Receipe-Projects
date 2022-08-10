@@ -11,6 +11,8 @@ import RequireAuth from './components/RequireAuth/RequireAuth';
 import AddItem from './components/AddItem/AddItem';
 import DeleteItem from './components/DeleteItem/DeleteItem';
 import FoodDetails from './components/FoodDetails/FoodDetails';
+import { ToastContainer} from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   return (
@@ -27,6 +29,8 @@ function App() {
         <Route path="signUp" element={<Register />} />
       </Routes>
       <Footer></Footer>
+
+      <ToastContainer />
       
     
     </div>

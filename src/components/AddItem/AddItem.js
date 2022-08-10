@@ -1,8 +1,11 @@
 import React from 'react';
+import { toast } from 'react-toastify';
 
 import { useForm } from "react-hook-form";
+import { useNavigate } from 'react-router-dom';
 const AddItem = () => {
     const { register, handleSubmit } = useForm();
+    const navigate =useNavigate();
     const onSubmit = data =>{
         
 
@@ -18,6 +21,9 @@ const AddItem = () => {
         .then(res=>res.json())
         .then(result=>{
             console.log(result);
+            toast('successfully added a item notice it home page at bottom');
+            navigate("/home")
+
         })
 
     };
